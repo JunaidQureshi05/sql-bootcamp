@@ -1,0 +1,133 @@
+ -A Collection of data (ex.phonebooks)
+-Database Management Systems (DBMS) are software systems used to store, retrieve, and run queries on data. A DBMS serves as an interface between an end-user and a database, allowing users to create, read, update, and delete data in the database.
+- A strcutured set of computerized data with a accessible interface.
+
+######################################################################################
+
+SQL - Structured query language.
+SQL is the language we use to "talk" to our database.
+MySQL - It is a database management system which uses SQL.
+
+
+Relational database
+1)MySQL
+2)SQLite
+3)PostgreSQL
+4)Oracle
+5)Many Others
+
+All uses SQL.
+
+######################################################################################
+A database is a bunch of tables.(In a relational database atleast).
+
+
+-Table holds the database.
+-A collection of related data held in a structured format within a databse.
+
+Ex.
+
+Name    Breed           Age
+______________________________
+Blue    Scottish Fold   1
+Rocket  Persian         3
+Monty   Tabby           10 
+Sam     Munchkin        5
+
+
+Datatypes - 
+    Data types are ued to define what type of data goes into a specified column to maintain consistency
+
+tables without datatypes-
+                         |
+                         |
+                         v
+                    (Inconsistent data)
+Name    Breed           Age
+______________________________
+Blue    Scottish Fold   1
+Rocket  Persian         3
+Monty   Tabby           ten 
+Sam     Munchkin        I am young cat
+
+Datatypes in SQL:-
+CHAR(Size) -It is used to specify a fixed length string that can contain numbers, letters, and special characters. Its size can be 0 to 255 characters. Default is 1.
+
+VARCHAR(Size) -It is used to specify a variable length string that can contain numbers, letters, and special characters. Its size can be from 0 to 65535 characters.
+
+INT(size) - It is used for the integer value. Its signed range varies from -2147483648 to 2147483647 and unsigned range varies from 0 to 4294967295. The size parameter specifies the max display width that is 255.
+
+
+
+username        content                 favorites
+varchar(15)     varchar(140)            int
+______________________________________________
+'coolguy'       'my first tweet'        1
+'guitar_queen'  'I love music:)'        10
+'lonely_heart'  'still looking 4 love'  0
+
+
+######################################################################################
+
+SHOW DATABASES;
+--List all the databases present in the database server.
+
+CREATE DATABASE <name>;
+--creates new database in the database server.
+
+DROP DATABASE <name>;
+--Deletes database from the database server.
+
+USE <name>;
+--switches to a specified database to work with
+
+SELECT DATABASE();
+--Gives us the name of database on which we are currently working on.
+
+######################################################################################
+
+CREATE TABLE <name>(col_name datatype,col_name datatype,col_name datatype,...);
+--Create table with columns having given datatypes
+--ex
+CREATE TABLE cats(name VARCHAR(100),age INT);
+
+SHOW TABLES;
+--Gives all the tables present in a database.
+
+DESC <name>
+--Describes the table (gives structure of the table)
+
+SHOW COLUMNS FROM <name>
+--gives columns of a table.
+
+DROP TABLE <name>
+--deletes entire table
+
+INSERT INTO <name>(column1,column2,...) VALUES(val1,val2,...)
+--Insert entries into table
+INSERT INTO cats(name,age) VALUES ('JETSON',7);
+
+######################################################################################
+
+
+Written Order
+[1]SELECT
+[2]FROM
+[3]WHERE
+[4]GROUP BY
+[5]HAVING 
+[6] ORDER BY
+
+
+
+######################################################################################
+
+Exexution Order
+
+[1]FROM
+[2]WHERE 
+[3]GROUP BY 
+[4]HAVING
+[5]SELECT
+[6]ORDER BY 
+[7]LIMIT
