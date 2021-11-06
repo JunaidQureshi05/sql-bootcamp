@@ -143,7 +143,26 @@ ex SELECT * FROM users WHERE user_age >18 will give all users having age greater
 -- It will delete entries from the table based on given condition.
 
 [18] DELETE FROM <table_name>
--- It will make entire table empty.
+-- Makes entire table empty (deletes all entries from the table).
+
+ [ALTER COMMANDS]
+ --The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+--The ALTER TABLE statement is also used to add and drop various constraints on an existing table.
+[19]  ALTER TABLE <table_name>
+ADD COL_NAME datatype;
+--Adds column to table with given datatype
+
+
+[20] ALTER TABLE table_name
+DROP COLUMN COL_NAME;
+-- Drops given column from table
+
+[21]ALTER TABLE <table_name>
+ALTER COLUMN COL_NAME datatype;
+--Changes Data Type of the given table.
+
+[22] ALTER TABLE <table_name> RENAME COLUMN OLD_COL_NAME TO NEW_COL_NAME
+--Renames a column
 
 
 [WRITTEN ORDER OF SQL CLAUSES]
