@@ -202,6 +202,17 @@ ALTER COLUMN COL_NAME datatype;
 --replaces given character with new replacing character in a string.
 --ex REPLACE('I love Coding','o','0') -> I l0ve C0ding
 
+[AGGREGATE FUNCTIONS]
+[1]MIN(COL_NAME)
+--Gives minimum value in a column
+[2]MAX(COL_NAME)
+--Gives maximum value in a column
+[3] AVG(COL_NAME)
+--Gives average value in a column
+
+[4]SUM(COL_NAME)
+--Gives sum of all values in a column
+
 [WRITTEN ORDER OF SQL CLAUSES]
 
 [1]SELECT
