@@ -1,10 +1,13 @@
  
 [WHT IS A DATBASE MANAGEMENT SYSTEM]
+
 -A Collection of data (ex.phonebooks)
 -Database Management Systems (DBMS) are software systems used to store, retrieve, and run queries on data. A DBMS serves as an interface between an end-user and a database, allowing users to create, read, update, and delete data in the database.
 - A strcutured set of computerized data with a accessible interface.
 
 ######################################################################################
+
+[SQL,MYSQL & RDBMS]
 
 SQL - Structured query language.
 SQL is the language we use to "talk" to our database.
@@ -20,9 +23,12 @@ Relational database
 
 All uses SQL.
 
-######################################################################################
+
+[WHAT IS A DATABASE]
+
 A database is a bunch of tables.(In a relational database atleast).
 
+[WHAT IS A TABLE]
 
 -Table holds the database.
 -A collection of related data held in a structured format within a databse.
@@ -36,6 +42,7 @@ Rocket  Persian         3
 Monty   Tabby           10 
 Sam     Munchkin        5
 
+[DATA TYPES]
 
 Datatypes - 
     Data types are ued to define what type of data goes into a specified column to maintain consistency
@@ -52,7 +59,8 @@ Rocket  Persian         3
 Monty   Tabby           ten 
 Sam     Munchkin        I am young cat
 
-Datatypes in SQL:-
+[DATATYPES IN SQL]
+
 CHAR(Size) -It is used to specify a fixed length string that can contain numbers, letters, and special characters. Its size can be 0 to 255 characters. Default is 1.
 
 VARCHAR(Size) -It is used to specify a variable length string that can contain numbers, letters, and special characters. Its size can be from 0 to 65535 characters.
