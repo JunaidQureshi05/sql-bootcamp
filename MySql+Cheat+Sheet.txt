@@ -116,7 +116,34 @@ CREATE TABLE cats(name VARCHAR(100),age INT);
 --Insert entries into table
 INSERT INTO cats(name,age) VALUES ('JETSON',7);
 
+[12] SELECT  * FROM <tablename>
+-- Selects all columns from the given table
 
+[13] SELECT COL1,COL2 FROM <tablename>
+-- Selects specified columns from the given table.
+
+[14] SELECT * FORM <tablename> WHERE <condition>
+-- Where clause helps us to select data based on certain condition
+ex SELECT * FROM users WHERE user_age >18 will give all users having age greater than 
+18.
+
+[15] SELECT COL1 AS 'ALIAS' FROM <table_name>
+-- AS gives alias to column names.
+
+[16] UPDATE TABLE
+    SET COL1 = expr1,
+        COL2 = expr2,
+        . . .
+        COL3 = exprn
+    WHERE <condition>
+
+--It ALters data inside table .
+
+[17] DELETE FROM <table_name> WHERE <condition>
+-- It will delete entries from the table based on given condition.
+
+[18] DELETE FROM <table_name>
+-- It will make entire table empty.
 
 
 [WRITTEN ORDER OF SQL CLAUSES]
