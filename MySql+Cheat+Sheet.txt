@@ -164,6 +164,43 @@ ALTER COLUMN COL_NAME datatype;
 [22] ALTER TABLE <table_name> RENAME COLUMN OLD_COL_NAME TO NEW_COL_NAME
 --Renames a column
 
+[STRING FUNCTIONS]
+
+[1] CONCAT(String1,String2...)
+
+--Adds string
+--ex CONCAT('Junaid',' ','Qureshi') -> Junaid Qureshi
+
+[2] CONCAT_WS(Seprator,String1,String2)
+--Adds strings with given seprator in between
+--ex CONCAT_WS(' ','Junaid','Qureshi') -> Junaid Qureshi
+
+[3] UPPER(String)
+--Makes String UpperCase
+--ex UPPER('india') -> india
+
+[4] LOWER(String)
+--Makes String LowerCase
+--ex LOWER('Maharashta')-> maharashta
+
+[5] SUBSTR(String,startIdx,endIdx)
+--Gives Substring (part of the string) from startIdx to endIdx where startIdx starts from 1 and endIdx is optional if not specified it will make endIdx to the end of the string
+--ex SUBSTR('Junaid',1,2)
+
+[6] SUBSTRING(String,startIdx,endIdx)
+-- Same as SUBSTR()
+
+[7] CHAR_LENGTH(String)
+--Give length of characters in a string
+--ex. CHAR_LENGTH('Junaid')->3
+
+[8] REVERSE(String)
+--Makes string reversed
+--REVERSE('Junaid) -> dianuJ
+
+[9] REPLACE(String,toBeReplaced,replacingChar)
+--replaces given character with new replacing character in a string.
+--ex REPLACE('I love Coding','o','0') -> I l0ve C0ding
 
 [WRITTEN ORDER OF SQL CLAUSES]
 
