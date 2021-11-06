@@ -5,7 +5,7 @@
 -Database Management Systems (DBMS) are software systems used to store, retrieve, and run queries on data. A DBMS serves as an interface between an end-user and a database, allowing users to create, read, update, and delete data in the database.
 - A strcutured set of computerized data with a accessible interface.
 
-######################################################################################
+
 
 [SQL,MYSQL & RDBMS]
 
@@ -77,50 +77,50 @@ ______________________________________________
 'lonely_heart'  'still looking 4 love'  0
 
 
-######################################################################################
+[SQL Commands]
 
-SHOW DATABASES;
+[1] SHOW DATABASES;
 --List all the databases present in the database server.
 
-CREATE DATABASE <name>;
+[2] CREATE DATABASE <name>;
 --creates new database in the database server.
 
-DROP DATABASE <name>;
+[3] DROP DATABASE <name>;
 --Deletes database from the database server.
 
-USE <name>;
+[4] USE <name>;
 --switches to a specified database to work with
 
-SELECT DATABASE();
+[5] SELECT DATABASE();
 --Gives us the name of database on which we are currently working on.
 
-######################################################################################
 
-CREATE TABLE <name>(col_name datatype,col_name datatype,col_name datatype,...);
+[6] CREATE TABLE <name>(col_name datatype,col_name datatype,col_name datatype,...);
 --Create table with columns having given datatypes
 --ex
 CREATE TABLE cats(name VARCHAR(100),age INT);
 
-SHOW TABLES;
+[7] SHOW TABLES;
 --Gives all the tables present in a database.
 
-DESC <name>
+[8] DESC <name>
 --Describes the table (gives structure of the table)
 
-SHOW COLUMNS FROM <name>
+[9] SHOW COLUMNS FROM <name>
 --gives columns of a table.
 
-DROP TABLE <name>
+[10] DROP TABLE <name>
 --deletes entire table
 
-INSERT INTO <name>(column1,column2,...) VALUES(val1,val2,...)
+[11] INSERT INTO <name>(column1,column2,...) VALUES(val1,val2,...)
 --Insert entries into table
 INSERT INTO cats(name,age) VALUES ('JETSON',7);
 
-######################################################################################
 
 
-Written Order
+
+[WRITTEN ORDER OF SQL CLAUSES]
+
 [1]SELECT
 [2]FROM
 [3]WHERE
@@ -130,9 +130,9 @@ Written Order
 
 
 
-######################################################################################
 
-Exexution Order
+
+[EXECUTION ORDER OF SQL CLAUSES]
 
 [1]FROM
 [2]WHERE 
