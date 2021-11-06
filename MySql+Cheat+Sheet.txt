@@ -158,7 +158,7 @@ DROP COLUMN COL_NAME;
 -- Drops given column from table
 
 [21]ALTER TABLE <table_name>
-ALTER COLUMN COL_NAME datatype;
+MODIFY COLUMN COL_NAME datatype;
 --Changes Data Type of the given table.
 
 [22] ALTER TABLE <table_name> RENAME COLUMN OLD_COL_NAME TO NEW_COL_NAME
